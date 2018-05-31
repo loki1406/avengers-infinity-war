@@ -27,16 +27,16 @@ $(document).ready(function(){
                     'Heimdall',
                     'Okoye',
                     'Wong'
-                  ];
+                  ].sort();
     var textinput = $('#searchbox').val();
     var expression = new RegExp(textinput, "i");
 
     $.each(avengers, function(key,value){
       if(value.search(expression) !== -1 && textinput !== ''){
-        $('#predictions').append('<li class = "dropdown"><a href="">'+value+'</a></li>');
+        $('#predictions').append('<li class = "dropdown"><a href="avengers/'+value+'.html">'+value+'</a></li>');
       }
     });
 
-
   });
+
 });
