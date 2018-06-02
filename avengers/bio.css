@@ -16,14 +16,10 @@ img.artwork{
 div.heading{
   margin: 2em 2em 0 2em;
 }
-@@media only screen and (max-width:768px) {
+@media only screen and (min-width:768px) {
   div.content{
     display: flex;
   }
-
-div.content{
-  display: inline;
-}
 
 
 }
@@ -77,4 +73,33 @@ div.content{
   font-weight: 100;
   margin: 2em;
   padding: 0 0 0 0.3em;
+}
+
+body div button{
+  border: 0;
+  border-radius: 0.25em;
+  height: auto;
+  width: auto;
+  outline-color: #ffd700;
+  box-shadow: 0 0 0.4em 0 #ffd700;
+  background: -moz-linear-gradient(
+    top,
+    #ebd197 0%,
+    #b48811 50%,
+    #a2790d 51%,
+    #bb9b49 100%);
+  background:  -webkit-linear-gradient(
+    top,
+    #ebd197 0%,
+    #b48811 50%,
+    #a2790d 51%,
+    #bb9b49 100%);
+  background: linear-gradient(
+    top,
+    #ebd197 0%,
+    #b48811 50%,
+    #a2790d 51%,
+    #bb9b49 100%);
+  color: #fff;
+  margin: 2em;
 }
