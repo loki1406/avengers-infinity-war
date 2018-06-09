@@ -26,7 +26,8 @@ $(document).ready(function(){
                     'Rocket Raccoon',
                     'Heimdall',
                     'Okoye',
-                    'Wong'
+                    'Wong',
+                    'Shuri'
                   ].sort();
     var textinput = $('#searchbox').val();
     var expression = new RegExp(textinput, "i");
